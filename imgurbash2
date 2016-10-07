@@ -1,4 +1,16 @@
 #!/bin/bash
+
+echo -e '\e[1;31m' 
+echo "        ┌───────────────────────────────────┐"
+echo "        │     Uploading Image To Imgur: !   │ "
+echo "        └───────────────────────────────────┘"
+echo "       ╱"
+echo "   ▀▄   ▄▀"
+echo -e "  ▄█▀███▀█▄ "
+echo -e " █▀███████▀█"
+echo -e " ▀ ▀▄▄ ▄▄▀ ▀"
+echo -e '\e[1;37m'
+
 # Copyright (c) 2016 Ramon <https://github.com/ram-on/imgurbash2>
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -107,6 +119,7 @@ function upload_image() {
 		echo '"error":"File does not exist, skipping"'
 	fi
 }
+
 
 
 #
