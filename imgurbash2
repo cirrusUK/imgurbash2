@@ -95,7 +95,7 @@ function curl_imgur() {
 function candy () {
 echo -e '\e[1;31m' 
 echo "        ┌───────────────────────────────────┐"
-echo "        │   Taking Screenshot. Say Cheese!  │ "
+echo "        │     Uploading Image To Imgur!     │ "
 echo "        └───────────────────────────────────┘"
 echo "       ╱"
 echo "   ▀▄   ▄▀"
@@ -183,7 +183,20 @@ function upload_images() {
 }
 
 
-tput setaf 2
+function delcandy () {
+echo -e '\e[1;31m' 
+echo "        ┌───────────────────────────────────┐"
+echo "        │    Deleting Image From Imgur!     │ "
+echo "        └───────────────────────────────────┘"
+echo "       ╱"
+echo "   ▀▄   ▄▀"
+echo -e "  ▄█▀███▀█▄ "
+echo -e " █▀███████▀█"
+echo -e " ▀ ▀▄▄ ▄▄▀ ▀"
+echo -e '\e[1;37m'
+}
+
+tput setaf 3
 #
 # Deletes the images corresponding to the supplied deletehashes.
 #
@@ -230,6 +243,7 @@ fi
 
 errors=false
 if [ "$1" = "-d" -o "$1" = "--delete" ]; then
+        delcandy
 	delete_images "$@"
 else
         candy
@@ -239,3 +253,4 @@ fi
 if $errors; then
 	exit 1
 fi
+
