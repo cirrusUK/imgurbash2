@@ -1,15 +1,10 @@
 #!/bin/bash
-
-echo -e '\e[1;31m' 
-echo "        ┌───────────────────────────────────┐"
-echo "        │     Uploading Image To Imgur: !   │ "
-echo "        └───────────────────────────────────┘"
-echo "       ╱"
-echo "   ▀▄   ▄▀"
-echo -e "  ▄█▀███▀█▄ "
-echo -e " █▀███████▀█"
-echo -e " ▀ ▀▄▄ ▄▄▀ ▀"
-echo -e '\e[1;37m'
+red=`tput setaf 1`
+green=`tput setaf 2`
+yellow=`tput setaf 3`
+blue=`tput setaf 4`
+#magenta=`tput setaf 5`
+cyan=`tput setaf 6`
 
 # Copyright (c) 2016 Ramon <https://github.com/ram-on/imgurbash2>
 # 
@@ -96,6 +91,19 @@ function is_remote_image() {
 function curl_imgur() {
 	curl -sH "Authorization: Client-ID 1923eac1555838e" "$@"
 }
+#
+function candy () {
+echo -e '\e[1;31m' 
+echo "        ┌───────────────────────────────────┐"
+echo "        │   Taking Screenshot. Say Cheese!  │ "
+echo "        └───────────────────────────────────┘"
+echo "       ╱"
+echo "   ▀▄   ▄▀"
+echo -e "  ▄█▀███▀█▄ "
+echo -e " █▀███████▀█"
+echo -e " ▀ ▀▄▄ ▄▄▀ ▀"
+echo -e '\e[1;37m'
+}
 
 
 #
@@ -104,6 +112,7 @@ function curl_imgur() {
 # Parameter:  Image file path or image URL
 #
 function upload_image() {
+
 	file="$1"
 
 	# if the image is stored remotely...
@@ -174,7 +183,7 @@ function upload_images() {
 }
 
 
-
+tput setaf 2
 #
 # Deletes the images corresponding to the supplied deletehashes.
 #
@@ -223,6 +232,7 @@ errors=false
 if [ "$1" = "-d" -o "$1" = "--delete" ]; then
 	delete_images "$@"
 else
+        candy
 	upload_images "$@"
 fi
 
