@@ -1,4 +1,4 @@
-# imgurbash2
+# upimgur
 imgurbash2 is a simple bash script that allows you to upload images to [imgur](https://imgur.com/).  Once an image is uploaded, the link is displayed on the terminal and copied to your clipboard (see below).
 
 This script can delete previously uploaded images.
