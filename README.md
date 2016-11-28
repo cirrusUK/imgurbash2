@@ -55,3 +55,7 @@ yaourt -S imgurbash2
 
 ## License
 [MIT License](https://raw.githubusercontent.com/ram-on/imgurbash2/master/LICENSE)
+
+Screenshot
+----------------------------
+![Screenshot](/screenshot.png)
