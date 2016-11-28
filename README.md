@@ -8,7 +8,7 @@ This script can delete previously uploaded images.
 
 To upload the image named cow.png to imgur:
 ```bash
-imgurbash2 cow.png
+upimgur cow.png
 ```
 The above command will output something like this:
 ```bash
@@ -21,32 +21,33 @@ The first link is the URL of the uploaded image.  This URL is copied to you clip
 It is also possible to upload remote images (HTTP/HTTPS) to imgur:
 ```bash
 # Upload the remote image fish.png and (local image) lion.png
-imgurbash2  https://myserver.org/fish.png  ~/lion.png
+upimgur  https://myserver.org/fish.png  ~/lion.png
 ```
 
 ### Delete images
 ```bash
-imgurbash2 ~/tmp/test.png
+upimgur ~/tmp/test.png
 http://i.imgur.com/HDVhl23.png    (Delete Hash = vgdTM62vQ08xaxa)
 ```
 
 To delete the above uploaded image:
 ```bash
-imgurbash2 -d vgdTM62vQ08xaxa
+upimgur -d vgdTM62vQ08xaxa
 ```
 
 ## Installation
 ### Linux / UN*X
 ```bash
-curl -O https://raw.githubusercontent.com/ram-on/imgurbash2/master/imgurbash2
-chmod u+x imgurbash2
+curl -O https://raw.githubusercontent.com/cirrusUK/upimgur/master/upimgur
+chmod u+x upimgur
 ```
 
 ### Arch Linux / Manjaro / Antergos
 ```bash
-git clone https://github.com/cirrusUK/imgurbash2.git
-cd imgurbash2
-cower -S imgurbash2
+git clone https://github.com/cirrusUK/upimgur.git
+cd upimgur
+sudo cp /path/to/upimgur /usr/local/bin
+sudo chmod +x /usr/local/bin/upimgur
 ```
 
 ## Dependencies
@@ -56,7 +57,7 @@ cower -S imgurbash2
 | `xsel` or `xclip`  | Yes      | Copies URL (image) link to clipboard |
 
 ## License
-[MIT License](https://raw.githubusercontent.com/ram-on/imgurbash2/master/LICENSE)
+[MIT License](https://github.com/cirrusUK/upimgur/blob/master/LICENSE)
 
 Screenshot
 ----------------------------
