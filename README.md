@@ -44,6 +44,8 @@ chmod u+x imgurbash2
 
 ### Arch Linux / Manjaro / Antergos
 ```bash
+git clone https://github.com/cirrusUK/imgurbash2.git
+cd imgurbash2
 cower -S imgurbash2
 ```
 
