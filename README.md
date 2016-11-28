@@ -8,7 +8,7 @@ This script can delete previously uploaded images.
 
 To upload the image named cow.png to imgur:
 ```bash
-upimgur cow.png
+upimgur ~/cow.png
 ```
 The above command will output something like this:
 ```bash
