@@ -44,7 +44,7 @@ chmod u+x imgurbash2
 
 ### Arch Linux / Manjaro / Antergos
 ```bash
-yaourt -S imgurbash2
+cower -S imgurbash2
 ```
 
 ## Dependencies
