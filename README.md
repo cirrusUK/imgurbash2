@@ -58,4 +58,4 @@ yaourt -S imgurbash2
 
 Screenshot
 ----------------------------
-![Screenshot](/screenshot.png)
+![Screenshot](/screenshot1.png)
