@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # https://github.com/jomo/imgur-screenshot
 # https://imgur.com/tools
-#
+#needs api key 
+#export imgur_acct_key=""
+#export imgur_secret=""
 # Slightly modified for `nnn` integration
 #
 # Shell: bash
